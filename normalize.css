@@ -315,8 +315,35 @@ template {
 }
 
 
+
+
 .wrapper {
   display: grid;
   grid-template-columns: 40vw 60vw;
 }
 
+.left-image {
+  background-image: url('./pramod-tiwari-3UgbE1b43j8-unsplash.jpg');
+  min-width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  background-size: 100vh 100%;
+}
+
+#logo-text {
+  display: grid;
+  place-content: center;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100px;
+  margin-top: 20vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.right-form {
+  background-color: white;
+  display: grid;
+}
