@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <script href="./script.js" defer></script>
     <title>Form</title>
@@ -18,33 +18,49 @@
             <div id="logo-text">Odin Form</div>
         </div>
         <div class="right-form">
-            <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
-            <p>Sign up now to get started.</p>
-            <p>You know you want to.</p>
-            <form action="#" method="get">
-                <fieldset id="input_fields">
-                    <legend>Let's get Started</legend>
-                        <label for="user_name">First Name</label>
-                        <input type="text" id="user_name">
-                        <label for="user_name_last">Last Name</label>
-                        <input type="text" id="user_name_last">
-                        <label for="user_email">Email</label>
-                        <input type="email" id="user_email">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="number" id="phone_number">
-                        <label for="password_one">Password</label>
-                        <input type="password" id="password_one">
-                        <label for="password_two">Confirm Password</label>
-                        <input type="password" id="password_two">
-                </fieldset>
-                <fieldset id="submit_button">
-                    <button type="submit">Create Account</button>
-                </fieldset>
-                <fieldset>
-                    <p>Already Have an account? </p>
-                    <a href="#">Login</a>
-                </fieldset>
-            </form>
+            <div class="top-section">
+                <div class="top-text">This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</div>
+                <div class="middle-text">Sign up <em>now</em> to get started.</div>
+                <div class="bottom-text">You <em>know</em> you want to.</div>
+            </div>
+            <div class="middle-section">
+                <form action="#" method="get">
+                    <fieldset style="border-style: none;" id="input_fields">
+                        <legend style="font-size: 1.4rem;">Let's get Started</legend>
+                        <div class="form-fields">
+                            <label for="user_name">First Name</label>
+                            <input type="text" id="user_name">
+                        </div>
+                        <div class="form-fields">
+                            <label for="user_name_last">Last Name</label>
+                            <input type="text" id="user_name_last">
+                        </div>
+                        <div class="form-fields">
+                            <label for="user_email">Email</label>
+                            <input type="email" id="user_email">
+                        </div>
+                        <div class="form-fields">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="number" id="phone_number">
+                        </div>
+                        <div class="form-fields">
+                            <label for="password_one">Password</label>
+                            <input type="password" id="password_one">
+                        </div>
+                        <div class="form-fields">
+                            <label for="password_two">Confirm Password</label>
+                            <input type="password" id="password_two">
+                        </div>
+                    </fieldset>
+                    <fieldset id="submit_button">
+                        <button type="submit">Create Account</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="bottom-section">
+                <div>Already have an account?</div>
+                <a href="#">Login</a>
+            </div>
         </div>
     </div>
 </body>
